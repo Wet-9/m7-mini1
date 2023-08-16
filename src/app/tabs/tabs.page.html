@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Main</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tabs</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="books">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>Books</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="songs">
+      <ion-icon name="musical-note"></ion-icon>
+      <ion-label>Songs</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

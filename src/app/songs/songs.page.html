@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Favorite Songs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-list-header>
+      <ion-label>User's Favorite Songs</ion-label>
+    </ion-list-header>
+
+    <ion-list>
+      <ion-reorder-group (ionItemReorder)="reordering($event)" disabled="false">
+        <ion-item *ngFor="let song of songs">
+          <ion-label>
+            Song: {{ song }}
+            <ion-reorder></ion-reorder>  
+          </ion-label>
+        </ion-item>
+      </ion-reorder-group>
+    </ion-list>
+  </ion-list>
+</ion-content>
